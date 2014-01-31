@@ -1,0 +1,80 @@
+/** {
+  border: 1px solid red;
+}*/
+
+body {
+  background: #262d35 url(/img/gplaypattern.png) repeat;
+}
+
+.container {
+  margin: 0px auto;
+  width: 75%;
+  height: 100%;
+  padding: 0px 20px 20px 20px;
+/*  border: 1px dotted orange;*/
+  color: #484452;
+  font-family: 'Duru Sans', sans-serif;
+  background-color: rgba(255,255,255,0.55);
+}
+
+th {
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  width: 90%;
+  padding-left: 10%;
+}
+
+h1, h3 {
+  text-align: center;
+  background: #FF4646;
+  background-color: rgba(233,224,219,0.55)
+}
+a {
+  text-decoration: none;
+  color: #692DAC;
+}
+a:hover {
+  color: #A6FF9B
+}
+
+#blog_form label {
+  width: 100px;
+}
+
+#blog_form li {
+  list-style: none;
+  margin: 20px;
+}
+
+.posts {
+  float: left;
+  width: 65%;
+}
+
+.tags {
+  float: right;
+  width: 30%;
+}
+
+.photo img {
+  height: 125px;
+}
+
+.new_post {
+  clear: both;
+}
+
+
+.footer {
+  position: fixed;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: #692DAC;
+  width: 100%;
+  background: #E9E0DB;
+  font-family: 'Duru Sans', sans-serif;
+}

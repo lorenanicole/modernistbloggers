@@ -1,0 +1,53 @@
+<div class="container">
+
+  <h1><center>Modernist Bloggerists</center></h1>
+
+  <p align="center">Today's date is: <%= @date %> </p>
+
+<div class="posts">
+  <% if @all_posts %>
+
+  <ul id="Posts">
+
+    <h3>Community Posts</h3>
+
+    <% i = 0 %>
+    <%@all_posts.each do |post| %>
+      <% i += 1 %>
+      <li><p><%= "#{i}.   " %><a href="/post/<%=post.id%>"><%=post.title%></a><%= ", Author: #{post.author}" %> </p></li>
+
+    <% end %>
+
+  </ul>
+
+  <% end %>
+  </div>
+  <div class="tags">
+  <% if @all_tags %>
+
+
+  <ul id="Tags">
+
+    <h3>Tags</h3>
+
+    <% i = 0 %>
+    <%@all_tags.each do |tag| %>
+      <% i += 1 %>
+      <li><p><%= "#{i}.  " %><a href="/tag/<%=tag.name%>"><%=tag.name%></a></p></li>
+
+    <% end %>
+
+  </ul>
+  <% end %>
+   </div>
+
+ <div class="photo"
+
+  <p align= "center"><img src="http://s3-ec.buzzfed.com/static/enhanced/terminal05/2012/9/5/14/anigif_enhanced-buzz-30257-1346868350-12.gif"></img></p>
+</div>
+
+<div class="new_post">
+  <p align="right"><a href="/create">Post a new blog entry</a></p>
+</div>
+
+</div>

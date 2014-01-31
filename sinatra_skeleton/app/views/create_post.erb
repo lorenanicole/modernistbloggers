@@ -1,0 +1,32 @@
+<div class="container">
+
+  <h1><center>We're Writing a Blog</center></h1>
+
+  <form action='/create' method='post' id="blog_form">
+    <ul>
+      <li>
+        <label for="post_title">Title:</label>
+        <input type='text' name='title'>
+       </li>
+      <li>
+        <label for="post_author">Author:</label>
+        <input type='text' name='author'>
+       </li>
+      <li>
+        <label for="post_body">Blog:</label>
+        <textarea name="body" form="blog_form" cols="33" rows="10">Enter text here...</textarea>
+      <li>
+        <label for="post_tags">Tags:</label>
+        <input id="post_tags" name="post[tags]" value="ponies, puppies, evil robots">
+      </li>
+      <li>
+        <input id='s-button' type='submit' value='We be blogggin!!'>
+      </li>
+    </ul>
+  </form>
+
+  <br><br>
+
+  <p align="right"><a href="/">Home</a></p>
+
+</div>

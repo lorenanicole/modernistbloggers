@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h1><center>Scope out the Whims of Modern Bloggists in the <%= @lookup_tag.name %> Tag: </center></h1>
+
+  <p>In case you forgot ... here is today's date is: <%= @c_date %> </p>
+
+  <ul>
+  <% if @cat_posts %>
+    <% i = 0 %>
+    <%@cat_posts.each do |post| %>
+      <% i += 1 %>
+      <li><p><%= "#{i}." %><a href="/post/<%=post.id%>"><%=post.title%></a><%= ", Author: #{post.author}" %> </p></li>
+    <% end %>
+
+  <% end %>
+  </ul>
+
+  <p align="right"><a href="/">Home</a></p>
+
+</div>
